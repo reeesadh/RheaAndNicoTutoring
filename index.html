@@ -14,13 +14,111 @@
         flex-direction: column; 
         height: 100vh;
     }
+
+    #title {
+        background-color: #11d2f040;
+        background-image: url(student.avif);
+        width: 900px;
+        height: 200px;
+        align-self: center;
+        box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
+    }
+
+    #centered-text {
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        
+    }
+
+    #bg {
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(graphingpaper.jpg);
+    }
+
+    #Rhea {
+        background-color: aqua;
+        width: 430px;
+        height: 200px;
+    }
+
+    #Nico {
+        background-color: rgb(0, 255, 38);
+        width: 430px;
+        height: 200px;
+    }
+
+    #About {
+        background-color: aqua;
+        width: 800px;
+        height: 200px;
+    }
+
+    #SignUp {
+        background-color: aqua;
+        width: 600px;
+        height: 80px;
+    }
+
+    #horizontal {
+        display: flex;
+    }
+
+    #vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 </style>
-<body>
-<h1>Rhea and Luran Tutoring</h1>
-<h1>About</h1>
-<h1>Meet the Instructors</h1>
-<h1>How to Sign Up</h1>
-<p>info</p>
+<body id="bg">
+
+<div id="vertical">
+    <div id="title">
+        <div style="height: 60px;"></div>
+        <div id="centered-text">Rhea and Nico Tutoring</div>
+    </div>
+
+    <div style="align-self: center;" id="About">
+        <div style="font-weight: bold; margin: 10px; font-size: 20px;">
+            About Out Center
+        </div>
+            <div style="font-weight: bold; margin: 10px;">
+                yap yap yap
+            </div>
+        </div>
+
+    <div style="align-self: center;">
+        <div id="horizontal">
+            <div id="Rhea">
+                <div style="font-weight: bold; margin: 10px; font-size: 20px;">
+                    Rhea
+                </div>
+                <div style="font-weight: bold; margin: 10px;">
+                    hi
+                </div>
+            </div>
+            <div style="width: 40px;"></div>
+            <div id="Nico">
+                <div style="font-weight: bold; margin: 10px; font-size: 20px;">
+                    Nico
+                </div>
+                <div style="font-weight: bold; margin: 10px;">
+                    hi
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="SignUp" style="align-self: center;">
+        <div style="font-weight: bold; margin: 10px; font-size: 20px;">
+            Sign Up
+        </div>
+        <div style="font-weight: bold; margin: 10px;">
+            lore
+        </div>
+    </div>
+
+    <div></div>
+</div>
 
 </body>
 </html>
