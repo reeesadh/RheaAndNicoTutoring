@@ -6,73 +6,128 @@
 
 <title>Rhea and Luran Tutoring Website</title>
 <style>
+    html, body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
-        background: #0d0d0d; 
+        background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+                    url(graphingpaper.jpg);
+        
+        background-repeat:
+            no-repeat,
+            repeat;
+        
+        background-size: cover;
+
         color: #fff; 
         font-family: 'JetBrains Mono', monospace; 
         display: flex; 
         flex-direction: column; 
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #title {
         background-color: #11d2f040;
-        background-image: url(students.jpg);
-        width: 900px;
-        height: 200px;
+        background-image: url(student.avif);
+        width: 90%;
+        max-width: 1400px;
+        height: auto;
         align-self: center;
         box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
     }
 
     #centered-text {
         text-align: center;
-        font-size: 60px;
+        font-size: 5vw;
         font-weight: bold;
         
     }
 
     #bg {
-        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(graphingpaper.jpg);
+        background-image:
+            linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+            url(graphingpaper.jpg);
+        
+            background-repeat:
+                no-repeat,
+                repeat;
+            
+            background-size: cover;
     }
 
     #Rhea {
-        background-color: aqua;
-        width: 430px;
-        height: 200px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 430px;
+        height: auto;
+        overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #Nico {
-        background-color: rgb(0, 255, 38);
-        width: 430px;
-        height: 200px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 430px;
+        height: auto;
+        overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #About {
-        background-color: aqua;
-        width: 800px;
-        height: 200px;
-    }
-
-    #SignUp {
-        background-color: aqua;
-        width: 600px;
-        height: 80px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 1200px;
+        height: auto;
+        overflow-wrap: break-word;
     }
 
     #horizontal {
         display: flex;
-        gap: 30px
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #vertical {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 40px;
     }
 
     #clickable-text {
         color: #14d3e1;
     }
+
+    #overlapping-img {
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        right: 0px;
+        top: -36px;
+        border-radius: 50%;
+        width: 180px;
+        object-fit: cover;
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
 </style>
 <body id="bg">
 
@@ -83,21 +138,27 @@
         <a href="meet.html" id="clickable-text">Meet Our Tutors</a>
         <a href="signup.html" id="clickable-text">Sign Up</a>
     </div>
-    
 
     <hr style="color: aqua; width: 90%;">
+
     <div id="title">
-        <div style="height: 60px;"></div>
-        <div id="centered-text">Rhea and Nico Tutoring</div>
+        <div id="centered-text" style="margin: 15px;">Rhea and Nico Tutoring</div>
     </div>
 
     <div style="align-self: center;" id="About">
-        <div style="font-weight: bold; margin: 10px; font-size: 20px;">
-            About Our Center
+        <div style="font-weight: bold; margin: 10px; font-size: 26px; text-align: center; color: lightblue;">
+            <br>About Our Center
         </div>
+            <div style="font-weight:200; margin: 20px; font-size: 18px;">
+                <br>
+                Our tutoring center aims to offer each student top notch tutoring services for affordable pricing through our sliding scale system.<br><br>
+                Each year students search for tutoring, only to find, well, paycheck punishing prices left and right. So, we decided to take matters into our own hands.<br>
+                With us, classes are focused on you, the student, and your needs, from homework to test prep to general exploration.<br><br>
+                Most importantly, we love teaching! …and have been doing so for half a decade - as such, we’ve perfected our method.<br><br>
+                No two lessons are the same - we write each customized lesson for the student, informed by their abilities, questions, and concerns.<br><br>
+                The best part? You can reach out at any time! Whether you need help with conceptual understanding, course work, homework problems, or general advice, we will help as soon as we can.
+            </div>
         </div>
-
-    <div></div>
 </div>
 
 </body>

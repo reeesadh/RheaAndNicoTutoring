@@ -6,73 +6,128 @@
 
 <title>Rhea and Luran Tutoring Website</title>
 <style>
+    html, body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
-        background: #0d0d0d; 
+        background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+                    url(graphingpaper.jpg);
+        
+        background-repeat:
+            no-repeat,
+            repeat;
+        
+        background-size: cover;
+
         color: #fff; 
         font-family: 'JetBrains Mono', monospace; 
         display: flex; 
         flex-direction: column; 
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #title {
         background-color: #11d2f040;
         background-image: url(student.avif);
-        width: 900px;
-        height: 200px;
+        width: 90%;
+        max-width: 1400px;
+        height: auto;
         align-self: center;
         box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
     }
 
     #centered-text {
         text-align: center;
-        font-size: 60px;
+        font-size: 5vw;
         font-weight: bold;
         
     }
 
     #bg {
-        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(graphingpaper.jpg);
+        background-image:
+            linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+            url(graphingpaper.jpg);
+        
+            background-repeat:
+                no-repeat,
+                repeat;
+            
+            background-size: cover;
     }
 
     #Rhea {
-        background-color: aqua;
-        width: 430px;
-        height: 200px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 430px;
+        height: auto;
+        overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #Nico {
-        background-color: rgb(0, 255, 38);
-        width: 430px;
-        height: 200px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 430px;
+        height: auto;
+        overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #About {
-        background-color: aqua;
-        width: 800px;
-        height: 200px;
-    }
-
-    #SignUp {
-        background-color: aqua;
-        width: 600px;
-        height: 80px;
+        background-color: rgba(72, 130, 130, 0.317);
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 6px;
+        max-width: 1200px;
+        height: auto;
+        overflow-wrap: break-word;
     }
 
     #horizontal {
         display: flex;
-        gap: 30px
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #vertical {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 40px;
     }
 
     #clickable-text {
         color: #14d3e1;
     }
+
+    #overlapping-img {
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        right: 0px;
+        top: -36px;
+        border-radius: 50%;
+        width: 180px;
+        object-fit: cover;
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
 </style>
 <body id="bg">
 
@@ -83,19 +138,50 @@
         <a href="meet.html" id="clickable-text">Meet Our Tutors</a>
         <a href="signup.html" id="clickable-text">Sign Up</a>
     </div>
-    
 
     <hr style="color: aqua; width: 90%;">
+
     <div id="title">
-        <div style="height: 60px;"></div>
-        <div id="centered-text">Rhea and Nico Tutoring</div>
+        <div id="centered-text" style="margin: 15px;">Rhea and Nico Tutoring</div>
     </div>
 
-    <div style="align-self: center;" id="About">
-        <div style="font-weight: bold; margin: 10px; font-size: 20px;">
-            About Our Center
+    <div style="align-self: center;">
+        <div id="horizontal">
+            <div id="Rhea">
+                <div style="display: flex;">
+                    <div style="display: flex; gap: 10px">
+                        <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue;">
+                            Rhea
+                        </div>
+                        <img id="overlapping-img" src="rhea_headshot.jpg">
+                    </div>
+                </div>
+                <div style="font-weight: 200; margin: 16px;">
+                    Hello! My name is Rhea <br>and I am a senior at <br>Newport High School<br> pursuing CS/AeroE, as <br>well as a part time Math Instructor at Mathnasium!<br><br>
+                    I have been tutoring students for subjects ranging from math and physics, to python for 6+ years. <br><br>
+                    I always prioritize establishing a fundamental understanding of each concept before moving onto sharpening speed and accuracy.<br><br>
+                    Having tutored for many years, I have worked with students with many different learning styles, and have forged a wide range of teaching techniques to ensure my lessons cater to each individual student!<br>
+                </div>
+            </div>
+            <div style="width: 40px;"></div>
+            <div id="Nico">
+                <div style="display: flex;">
+                    <div style="display: flex; gap: 10px">
+                        <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue">
+                            Nico
+                        </div>
+                        <img id="overlapping-img" src="luran.jpg">
+                    </div>
+                </div>
+                <div style="font-weight: 200; margin: 16px;">
+                    Hi there! <br>My name is Nico, <br>and I'm studying chemical <br>engineering at the <br>University of Washington. <br><br>
+                    I'm super passionate about all things STEM and education! <br><br>
+                    I started attending UW after my 10th grade year at Newport High School through the Robinson Center. As a result, I can empathize and relate to your students, having lived through it myself in recent years, whilst still having a college-level grasp of content.<br><br>
+                    I can help you with anything from conceptual understanding, to lab reports, and homework problems. Reach out anytime!
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
 
     <div></div>
 </div>
