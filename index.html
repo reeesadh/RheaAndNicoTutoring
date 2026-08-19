@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
     }
-    
+
     body {
         background: #0d0d0d; 
         color: #fff; 
@@ -58,6 +58,8 @@
         width: 430px;
         height: auto;
         overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #Nico {
@@ -69,6 +71,8 @@
         width: 430px;
         height: auto;
         overflow-wrap: break-word;
+        position: relative;
+        overflow: visible;
     }
 
     #About {
@@ -96,6 +100,23 @@
     #clickable-text {
         color: #14d3e1;
     }
+
+    #overlapping-img {
+        border-radius: 20px;
+        border-color: palevioletred;
+        border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        right: 0px;
+        top: -36px;
+        border-radius: 50%;
+        width: 180px;
+        object-fit: cover;
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
 </style>
 <body id="bg">
 
@@ -132,11 +153,16 @@
     <div style="align-self: center;">
         <div id="horizontal">
             <div id="Rhea">
-                <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue">
-                    Rhea
+                <div style="display: flex;">
+                    <div style="display: flex; gap: 10px">
+                        <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue;">
+                            Rhea
+                        </div>
+                        <img id="overlapping-img" src="rhea_headshot.jpg">
+                    </div>
                 </div>
                 <div style="font-weight: 200; margin: 16px;">
-                    Hello! My name is Rhea and I am a senior at Newport High School pursuing CS/AeroE, as well as a part time Math Instructor at Mathnasium!<br><br>
+                    Hello! My name is Rhea <br>and I am a senior at <br>Newport High School<br> pursuing CS/AeroE, as <br>well as a part time Math Instructor at Mathnasium!<br><br>
                     I have been tutoring students for subjects ranging from math and physics, to python for 6+ years. <br><br>
                     I always prioritize establishing a fundamental understanding of each concept before moving onto sharpening speed and accuracy.<br><br>
                     Having tutored for many years, I have worked with students with many different learning styles, and have forged a wide range of teaching techniques to ensure my lessons cater to each individual student!<br>
@@ -144,11 +170,16 @@
             </div>
             <div style="width: 40px;"></div>
             <div id="Nico">
-                <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue;">
-                    Nico
+                <div style="display: flex;">
+                    <div style="display: flex; gap: 10px">
+                        <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue">
+                            Nico
+                        </div>
+                        <img id="overlapping-img" src="rhea_headshot.jpg">
+                    </div>
                 </div>
                 <div style="font-weight: 200; margin: 16px;">
-                    Hi there! My name is Nico, and I'm studying chemical engineering at the University of Washington. <br><br>
+                    Hi there! <br>My name is Nico, <br>and I'm studying chemical <br>engineering at the <br>University of Washington. <br><br>
                     I'm super passionate about all things STEM and education! <br><br>
                     I started attending UW after my 10th grade year at Newport High School through the Robinson Center. As a result, I can empathize and relate to your students, having lived through it myself in recent years, whilst still having a college-level grasp of content.<br><br>
                     I can help you with anything from conceptual understanding, to lab reports, and homework problems. Reach out anytime!
