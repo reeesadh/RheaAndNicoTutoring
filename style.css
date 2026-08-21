@@ -81,9 +81,10 @@ body {
     border-color: palevioletred;
     border-style: dashed;
     border-width: 6px;
-    max-width: 1200px;
+    max-width: 96%;
     height: auto;
     overflow-wrap: break-word;
+    margin-bottom: 20px;
 }
 
 #horizontal {
