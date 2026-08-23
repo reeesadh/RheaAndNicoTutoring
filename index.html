@@ -7,7 +7,7 @@
 
 <title>Rhea and Luran Tutoring Website</title>
 
-<body id="bg">
+<body id="bg" class="fade">
 
 <div id="vertical" style="align-items: center;">
     <div id="title">
@@ -16,7 +16,7 @@
 
     <hr style="color: aqua; width: 90%;">
 
-    <div id="horizontal">
+    <div id="horizontal" class="fade">
         <a href="index.html" id="clickable-text">Welcome</a>
         <a href="about.html" id="clickable-text">About</a>
         <a href="meet.html" id="clickable-text">Meet Our Tutors</a>
@@ -24,7 +24,7 @@
         <a href="testimonials.html" id="clickable-text">Student Testimonials</a>
     </div>
 
-    <div style="align-self: center;" id="About">
+    <div style="align-self: center;" id="About" class="fade">
         <div style="font-weight: bold; margin: 10px; font-size: 26px; text-align: center; color: lightblue;">
             About Our Center
         </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-    <div style="align-self: center;">
+    <div style="align-self: center;" class="fade">
         <div id="horizontal">
             <div id="Rhea">
                 <div style="display: flex;">
@@ -77,7 +77,7 @@
         </div>
     </div>
 
-    <div id="SignUp" style="align-self: center;">
+    <div id="SignUp" style="align-self: center;" class="fade">
         <div style="font-weight: bold; margin: 16px; font-size: 26px; color: lightblue">
             <button onclick="location.href='signup.html'" style="width: 400px; height: 100px; font-size: 40px; color: rgb(15, 75, 103); background-color: lightblue; border-color: rgb(15, 75, 103); border-width: 4px;">
                 <div style="display: flex; justify-content: center;">
@@ -92,6 +92,22 @@
 
     <div></div>
 </div>
+
+<script>
+    const fadeElements = document.querySelectorAll('.fade');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.1});
+
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
 
 </body>
 </html>
