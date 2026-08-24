@@ -7,7 +7,7 @@
 
 <title>Rhea and Luran Tutoring Website</title>
 
-<body id="bg" class="fade">
+<body id="bg" class="fade; cWhite">
 
 <div id="vertical" style="align-items: center;">
     <div id="title">
@@ -24,20 +24,40 @@
         <a href="testimonials.html" id="clickable-text">Student Testimonials</a>
     </div>
 
-    <div style="align-self: center;" id="About" class="fade">
-        <div style="font-weight: bold; margin: 10px; font-size: 26px; text-align: center; color: lightblue;">
-            About Our Center
-        </div>
-            <div style="font-weight:200; margin: 20px; font-size: 18px;">
-                <ul>
-                    <li><span style="color: #8e9ed7; text-decoration: underline;">prices start at $15/hr</span> but can be lowered through our needs based sliding scale system</li>
-                    <li>classes are focused on <b><i>you</i></b>, the student, and your needs, from homework to test prep to general exploration!</li>
-                    <li>We love teaching! …and have been doing so for half a decade - as such, <span style="color: #8e9ed7; text-decoration: underline;">we’ve perfected our method</span></li>
-                    <li>No two lessons are the same - we write each <span style="color: #8e9ed7; text-decoration: underline;">customized lesson for the student</span>, informed by their abilities, questions, and concerns.</li>
-                    <li>The best part? <span style="color: #8e9ed7; text-decoration: underline;">Students can reach out at any time for help!</span> Whether it's conceptual understanding, course work, homework problems, or general advice, we will help as soon as we can.</li>
-                </ul>
+    <div id="horizontal">
+        <div style="align-self: center;" id="About" class="fade">
+            <div>
+                <div style="font-weight: bold; margin: 10px; font-size: 26px; text-align: center; color: lightblue;">
+                About Our Center
+            </div>
+                <div style="font-weight:200; margin: 20px; margin-bottom: 0px; font-size: 18px;">
+                    <ul>
+                        <li><span style="color: #8e9ed7; text-decoration: underline;">prices start at $15/hr</span> but can be lowered through our needs based sliding scale system</li>
+                        <li>classes are focused on <b><i>you</i></b>, the student, and your needs, from homework to test prep to general exploration!</li>
+                        <li>We love teaching! …and have been doing so for half a decade - as such, <span style="color: #8e9ed7; text-decoration: underline;">we’ve perfected our method</span></li>
+                        <li>No two lessons are the same - we write each <span style="color: #8e9ed7; text-decoration: underline;">customized lesson for the student</span>, informed by their abilities, questions, and concerns.</li>
+                        <li>The best part? <span style="color: #8e9ed7; text-decoration: underline;">Students can reach out at any time for help!</span> Whether it's conceptual understanding, course work, homework problems, or general advice, we will help as soon as we can.</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div id="SignUp" style="display: flex; justify-content: center;" class="fade">
+                <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px; color: lightblue">
+                    <button onclick="location.href='signup.html'" style="width: 400px; height: 40px; font-size: 20px; color: rgb(15, 75, 103); background-color: lightblue; border-color: rgb(15, 75, 103); border-width: 4px;">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="display: flex; gap: 10px">
+                                Schedule a consultation today!
+                                <img src="pencil.png" style="width: 44px; height: 44px">
+                            </div>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
+    </div>
+    
+        
 
     <div style="align-self: center;" class="fade">
         <div id="horizontal">
@@ -107,6 +127,20 @@
     fadeElements.forEach(element => {
         observer.observe(element);
     });
+
+    const colorElements = document.querySelectorAll('.cWhite');
+    const observerColor = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('cRed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.1});
+
+    colorElements.forEach(element => {
+        observerColor.observe(element);
+    })
 </script>
 
 </body>
