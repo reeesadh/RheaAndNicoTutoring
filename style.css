@@ -16,6 +16,7 @@ body {
     display: flex; 
     flex-direction: column; 
     min-height: 100vh;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.268);
 }
 
 /* fade in stuff */
@@ -55,7 +56,6 @@ body {
     text-align: center;
     font-size: 5vw;
     font-weight: bold;
-    
 }
 
 #bg {
@@ -71,11 +71,11 @@ body {
 }
 
 #Rhea {
-    background-color: rgba(72, 130, 130, 0.317);
+    background: linear-gradient(rgba(3, 41, 41, 0.707), rgba(2, 35, 3, 0.264));
     border-radius: 20px;
-    border-color: palevioletred;
-    border-style: dashed;
-    border-width: 6px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
     max-width: 430px;
     height: auto;
     overflow-wrap: break-word;
@@ -84,11 +84,11 @@ body {
 }
 
 #Nico {
-    background-color: rgba(72, 130, 130, 0.317);
+    background: linear-gradient(rgba(3, 41, 41, 0.707), rgba(2, 35, 3, 0.264));
     border-radius: 20px;
-    border-color: palevioletred;
-    border-style: dashed;
-    border-width: 6px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
     max-width: 430px;
     height: auto;
     overflow-wrap: break-word;
@@ -97,15 +97,17 @@ body {
 }
 
 #About {
-    background-color: rgba(72, 130, 130, 0.317);
+    background: linear-gradient(rgba(3, 41, 41, 0.707), rgba(2, 35, 3, 0.264));
     border-radius: 20px;
-    border-color: palevioletred;
-    border-style: dashed;
-    border-width: 6px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
     max-width: 96%;
     height: auto;
     overflow-wrap: break-word;
     margin-bottom: 20px;
+    box-shadow: 4px 10px 60px 10px rgb(0, 0, 0);
+    inset: 0px 0px 0px 0px rgb(255, 0, 0);
 }
 
 #horizontal {
